@@ -1,0 +1,76 @@
+/* Resetting default margin, padding, and box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Setting body width to 80 characters */
+body {
+    max-width: 80ch;
+    margin: 0 auto; /* Center aligning the content */
+}
+
+/* Defining colors */
+:root {
+    --background-color: #f0f0f0; /* Light grey */
+    --foreground-color: #333; /* Dark grey */
+    --link-color: #007bff; /* Blue */
+    --highlight-color: #ffc107; /* Yellow */
+}
+
+/* Header styling */
+header {
+    background-color: rgba(255, 255, 255, 0.8); /* Faded version of foreground color */
+    padding: 10px;
+}
+
+/* Navigation menu styling */
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav li {
+    margin-right: 10px; /* Equal space between menu options */
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--foreground-color);
+}
+
+nav a:hover {
+    color: var(--highlight-color); /* Highlight on hover */
+}
+
+nav ul:after {
+    content: ''; /* Adding extra space after unordered list */
+    display: block;
+    clear: both;
+}
+
+/* Heading tag styling */
+h1, h2, h3 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Blog entry image and caption styling */
+figure {
+    text-align: center;
+}
+
+figcaption {
+    font-style: italic;
+}
+
+/* Blog entry paragraph styling */
+.blog-entry p {
+    text-align: justify; /* Justify text for better readability */
+}
+
+/* Additional style for blog image */
+.blog-entry img {
+    max-width: 100%; /* Ensure image fits container */
+}
